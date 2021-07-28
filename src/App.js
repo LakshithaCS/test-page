@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Template from './asserts/pages/template';
+import Logo from './asserts/pages/logo';
 
-function App() {
+function Page() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row">
+      <div className="col-6">
+        <div className="list-group" id="list-tab" role="tablist">
+          <a className="list-group-item list-group-item-action active" id="/" data-toggle="list" href="#" role="tab" aria-controls="home">Home</a>
+           <Link className="list-group-item list-group-item-action" to='/Login'> Login </Link>
+           <Link className="list-group-item list-group-item-action" to='/Register'> Register </Link>
+       </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default function App() {
+
+  const logo = <Logo />
+  const page = <Page />
+  
+  return (
+    <div className="App">
+         <Template left={logo} right={page} />
+    </div>
+  );
+}
