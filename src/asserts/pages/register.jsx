@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Template from './template';
 import Logo from './logo';
 import { Link } from 'react-router-dom';
@@ -18,31 +18,52 @@ export default function Register() {
 
 function Form() {
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [cpassword, setCpassword] = useState("");
+
+  const handleSubmit = (evt) => {
+
+    if(password != cpassword){
+      alert("passwords doesn't match");
+    }
+
+    else{
+    alert("your name is "+name + 
+      "\nyour email is "+email);
+      }
+  }
+
   return (
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="text-center">
           <h1>Register</h1>
         </div>
         
         <div className="mb-3">
           <label for="fullName" className="form-label">Full Name</label>
-          <input type="Name" className="form-control" id="fullName"></input>
+          <input type="Name" className="form-control" id="fullName"
+          value={name} onChange={e => setName(e.target.value)}></input>
         </div>
 
         <div className="mb-3">
           <label for="Email1" className="form-label">Email</label>
-          <input type="email" className="form-control" id="Email1" aria-describedby="emailHelp"></input>
+          <input type="email" className="form-control" id="Email1" aria-describedby="emailHelp"
+          value={email} onChange={e => setEmail(e.target.value)}></input>
         </div>
   
         <div className="mb-3">
           <label for="Password1" className="form-label">Password</label>
-          <input type="password" className="form-control" id="Password1"></input>
+          <input type="password" className="form-control" id="Password1"
+          value={password} onChange={e => setPassword(e.target.value)}></input>
         </div>
 
         <div className="mb-3">
           <label for="Password2" className="form-label">Confirm Password</label>
-          <input type="password" className="form-control" id="Password2"></input>
+          <input type="password" className="form-control" id="Password2"
+          value={cpassword} onChange={e => setCpassword(e.target.value)}></input>
         </div>
 
         <label className="custom-file-label" for="validatedCustomFile">Confirmation Letter</label>

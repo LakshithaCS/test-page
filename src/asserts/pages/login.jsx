@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Template from './template';
 import Logo from './logo';
 import { Link } from 'react-router-dom';
@@ -18,20 +18,29 @@ export default function Login() {
 
 function Form() {
 
+   const [email, setEmail] = useState("");
+   const [password, setPassword] = useState("");
+
+  const handleSubmit = (evt) => {
+    alert("your email is "+email + "\nyour password is " + password);
+  }
+
   return (
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="text-center">
           <h1>Login</h1>
         </div>
         <div className="mb-3">
           <label for="exampleInputEmail1" className="form-label">Email address</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
+          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          value={email} onChange={e => setEmail(e.target.value)}></input>
         </div>
   
         <div className="mb-3">
           <label for="exampleInputPassword1" className="form-label">Password</label>
-          <input type="password" className="form-control" id="exampleInputPassword1"></input>
+          <input type="password" className="form-control" id="exampleInputPassword1"
+           value={password} onChange={e => setPassword(e.target.value)}></input>
         </div>
   
         <div className="mb-3 form-check">
@@ -40,7 +49,7 @@ function Form() {
         </div>
  
         <div className="d-grid gap-2">
-          <button type="submit" className="btn btn-block btn-primary">Login</button>
+          <button type="submit" className="btn btn-block btn-primary" >Login</button>
         </div>
 
         <div>
