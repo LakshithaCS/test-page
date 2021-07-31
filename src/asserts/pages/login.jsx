@@ -4,29 +4,39 @@ import Logo from './logo';
 import { Link } from 'react-router-dom';
 
 export default function Login() {
-  
-  const logo = <Logo />
-  const form = <Form />
 
+  const logo = <Logo /> //logo of the page
+  const form = <Form /> //login form
+
+  //return template --> left side = logo , right side = login form 
   return (
     <div>
-      <Template left={logo} right={form} />
+      <Template left={logo} right={form} /> 
     </div>
   );
 }
 
-
+//login form implementation
 function Form() {
 
+
+  /*
+  this part is only for test sumbit form, it used for display all the details when clicks button.
+  you can delete --> line 28 to 35 & event handling functions in form.
+  */
+
+   //states
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");
 
+   //function that displayes email and password when submit
   const handleSubmit = (evt) => {
     alert("your email is "+email + "\nyour password is " + password);
   }
 
-  return (
+////////////////////////////////////////////////////////////////////////////////////////////
 
+  return (
       <form onSubmit={handleSubmit}>
         <div className="text-center">
           <h1>Login</h1>
