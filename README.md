@@ -1,12 +1,12 @@
 
 									mainpage
 							    	/		\
-								login		register
-								/				\
+							   login		register
+						         /				\
 						 template				template
 						/	   \				 /    \
-					logo       login form	  logo     registration form
-				   (left)		(right)        (left)		(right)		
+					logo       login form			    logo     registration form
+				   (left)		(right)        		  (left)		(right)		
 
 
 
@@ -26,10 +26,10 @@ left side -> width=40% --> blue colored
 right side -> width=60% -->white colored
 
 ------------------------
-| 	left  |   right    |
-|         |			   |
-|		  |   		   |
-|		  |			   |
+|   left  |   right    |
+|         |	       |
+|	  |   	       |
+|	  |	       |
 |WildLife |            |
 |Tracker  |            |
 |         |            |
