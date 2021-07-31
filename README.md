@@ -1,18 +1,18 @@
 
-									mainpage
+								    mainpage
 							    	/		\
-								login		register
-								/				\
+							  login 		register
+							/				\
 						 template				template
 						/	   \				 /    \
-					logo       login form	  logo     registration form
-				   (left)		(right)        (left)		(right)	
+				           logo       login form	  	    logo     registration form
+				   	(left)		(right)        		  (left)		(right)	
 
 	------------------------	
-	| 	left  |   right    |
-	|         |			   |
-	|		  |   		   |	
-	|		  |			   |
+	|   left  |   right    |
+	|         |	       |
+	|	  |   	       |	
+	|	  |	       |
 	|WildLife |            |
 	|Tracker  |            |
 	|         |            |
