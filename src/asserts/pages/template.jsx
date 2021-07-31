@@ -2,6 +2,46 @@ import React from 'react';
 import './styles.css';
 
 export default function Template(props) {
+
+/*
+
+Template - desktop view
+
+-------------------------
+|left(40%)|   right(60%)|
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+-------------------------
+   (blue)    (white)
+
+
+Template - mobile view
+
+-------------------------
+|     WildLife           | 
+|      Tracker           | (blue)
+-------------------------
+|                        |
+|                        |
+|                        |
+|                        |
+|                        | (white)
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+--------------------------
+
+
+*/
   return (
     <div class="container-fluid h-100">
     <div class="row min-vh-100 flex-column flex-md-row">

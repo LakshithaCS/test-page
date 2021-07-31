@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 
 export default function Register() {
   
-  const logo = <Logo />
-  const form = <Form />
+  const logo = <Logo /> //logo of the page
+  const form = <Form /> //registration form
 
+  //return template --> left side = logo , right side = registration form 
   return (
     <div>
       <Template left={logo} right={form} />
@@ -18,23 +19,34 @@ export default function Register() {
 
 function Form() {
 
+  
+  /*
+  this part is only for test sumbit form, it used for display all the details when clicks button.
+  you can delete --> line 28 to 47 & event handling functions in form.
+  */
+  //states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cpassword, setCpassword] = useState("");
 
+  //function that diplays details when submit
   const handleSubmit = (evt) => {
 
+    //if password doesn't match 
     if(password != cpassword){
       alert("passwords doesn't match");
     }
 
+    //else
     else{
     alert("your name is "+name + 
       "\nyour email is "+email);
       }
   }
 
+  //////////////////////////////////////////////////////////////////////
+  
   return (
 
       <form onSubmit={handleSubmit}>
