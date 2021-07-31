@@ -25,17 +25,18 @@ that template devides the page into two sides, left and right.
 left side -> width=40% --> blue colored
 right side -> width=60% -->white colored
 
+
 ------------------------
-|   left  |   right    |
-|         |	       |
-|	  |   	       |
-|	  |	       |
-|WildLife |            |
-|Tracker  |            |
-|         |            |
-|         |            |
-|         |            |
-|         |            |
+| left 	  |	right   |
+|	  |		|
+|	  |		|
+|	  |		|
+|WildLife |		|
+|Tracker  |		|
+|         |		|
+|         |		|
+|         |		|
+|         |		|
 ------------------------
 
 # mobile view
@@ -44,19 +45,19 @@ left side moves to top
 right side moves to bottom
 
 -------------------------
-|     WildLife           | 
-|      Tracker           | (blue)
+|	WildLife	| 
+|	Tracker		| (blue)
 -------------------------
-|                        |
-|                        |
-|                        |
-|                        |
-|                        | (white)
-|                        |
-|                        |
-|                        |
-|                        |
-|                        |
+|			|
+|			|
+|			|
+|			|
+|			| (white)
+|			|
+|			|
+|			|
+|			|
+|			|
 --------------------------
 
 
