@@ -13,7 +13,7 @@
 	|         |	       |
 	|	  |   	       |	
 	|	  |	       |
-	|WildLife |            |
+	|WildLife |            |	<------------- Desktop view of the template
 	|Tracker  |            |
 	|         |            |
 	|         |            |
@@ -27,7 +27,7 @@
 	-------------------------
 	|                        |
 	|                        |
-	|                        |
+	|                        |	<------------- Mobile view of the template
 	|                        |
 	|                        | (white)
 	|                        |
